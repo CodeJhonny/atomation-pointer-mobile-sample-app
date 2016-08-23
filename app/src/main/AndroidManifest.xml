@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.atomation.pointerdemo">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon_multisense"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="net.atomation.Token"
+            android:value=your_sample_app_token />
+
+        <activity
+            android:name=".views.ScanActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".views.ConfigurationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".models.MultiSenseService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".views.SplashActivity"
+            android:theme="@style/Theme.MyTransparent"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

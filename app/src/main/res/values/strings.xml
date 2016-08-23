@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">PressTalk</string>
+
+    <!-- Scan Activity -->
+    <string name="scan_title">Please hold the MultiSense button pressed for 5 seconds</string>
+    <string name="scan_subtitle">Available Devices</string>
+    <string name="scan_start">Start Scan</string>
+    <string name="scan_stop">Stop Scan</string>
+
+    <!-- Configuration Activity -->
+    <string name="configuration_contacts_title">Enter Phone Number</string>
+    <string name="configuration_contacts_hint">Phone number</string>
+    <string name="configuration_action_title">Choose Action</string>
+    <string name="configuration_done">Done</string>
+    <string name="configuration_subtitle">Configure what happens when you press the MultiSense button</string>
+    <string name="configuration_search_button">search contacts</string>
+    <string name="error_invalid_phone_number">Invalid phone number</string>
+
+    <!-- Main Activity -->
+    <string name="logo_multisense_content_description">logo_multisense</string>
+    <string name="main_title_format" formatted="false">Press the button on your MultiSense to %s\n%s</string>
+
+    <!-- Notifications -->
+    <string name="notification_title_scanning">MultiSense SDK</string>
+    <string name="notification_text_scanning">Scanning…</string>
+    <string name="notification_text_no_sim">No SIM card available</string>
+    <string name="notification_title_operation_failed">Operation Failed!</string>
+    <string name="notification_text_no_network">No mobile network available</string>
+    <string name="notification_text_no_permission">No permission to perform operation</string>
+
+    <!-- SMS -->
+    <string name="sms_body">Cool! You pressed and talked!\nThe Multisense has many more functionalities.\nVisit Atomation\'s website, download the SDK\nand build your own app.</string>
+    <string name="sms_sent">SMS Sent!</string>
+
+    <!-- menu -->
+    <string name="menu_action_switch_device">Switch Device</string>
+    <string name="menu_action_settings">Configuration</string>
+    <string name="menu_action_exit">Exit</string>
+
+    <!-- Misc -->
+    <string name="background_image">background image</string>
+
+    <!-- Enable location Dialog -->
+    <string name="location_dialog_text">Your Location seems to be disabled.\nIn order to connect to the MultiSense device, Location services are required.\nDo you want to enable them?</string>
+    <string name="location_dialog_positive">Yes</string>
+    <string name="location_dialog_negative">No</string>
+</resources>
